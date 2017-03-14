@@ -1,0 +1,18 @@
+<div class="container">
+<h3>Login Form</h3>
+<form #f="ngForm"> <!--  access a directive using a template reference vaiable-->
+	<div>
+	 User Name : <input class="form-control" type="text" required placeholder="UserName" name="username" minlength="5" maxlength="8" [(ngModel)]="user.username"><!-- ngModel is for binding of the data, angular is being aware that we want to control this field-->
+	 <br><br>
+	 Email: <input class="form-control" type="email" required placeholder="email" name="email" [(ngModel)]="user.email">
+	 <br><br>
+	 Password : <input  class="form-control" type="password" required placeholder="password" name="password" [(ngModel)]="user.password">
+
+
+</div>
+</form>
+</div>
+	<button class="btn btn-primary" type="submit" (click)="onSubmit(f)">Login</button>
+
+
+                   

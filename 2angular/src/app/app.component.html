@@ -1,0 +1,27 @@
+<h3>
+  Angular 2 Demo
+</h3>
+<nav class="navbarclass">
+	<button id ="navid" class="btn btn-primary" [routerLink]="['/']">
+    Home
+  </button>
+  |
+	<button class="btn btn-primary" (click)="dashboardcheck()">
+    Dashboard
+  </button>
+   |
+  <button class="btn btn-primary" [routerLink]="['/vrplayer']">
+    VrPlayer
+  </button>
+  |
+  <button class="btn btn-primary" (click)="logout()">
+    Logout
+  </button>
+  
+</nav>
+
+<main>
+	<router-outlet></router-outlet>
+</main>
+
+
